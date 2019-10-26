@@ -180,11 +180,14 @@ def player_stats(player_name)
       if player[:player_name] == player_name
         i = 1
         while i < player.length - 1 do 
-          
+          stat = player[i]
+          result[stat] = player[stat]
+          i += 1
         end 
       end
     end
   end 
+  result
 end 
 
 
