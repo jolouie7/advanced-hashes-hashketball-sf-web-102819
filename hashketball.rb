@@ -192,7 +192,18 @@ def player_stats(player_name)
   end 
 end 
 
-
+def big_shoe_rebounds
+  #find the player with the largest shoe size
+  current_largest_shoe_size = nil
+  current_player_with_largest_shoe_size = 0
+  game_hash().each do |home_away, team|
+    team[:players].each do |player|
+      if player[:player_name] == player_name
+        return player[:points]
+      end
+    end
+  end
+end 
 
 
 
