@@ -174,7 +174,17 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  
+  result = {}
+  game_hash().each do |home_away, team|
+    team[:players].each do |player|
+      if player[:player_name] == player_name
+        i = 1
+        while i < player.length - 1 do 
+          
+        end 
+      end
+    end
+  end 
 end 
 
 
