@@ -162,7 +162,13 @@ def team_names
 end
 
 def player_numbers(team_name)
-  
+  result = []
+  game_hash().each do |home_away, team|
+    team[:players].each do |player|
+      result << player[:number]
+    end
+  end
+  result
 end
 
 def player_stats(player_name)
