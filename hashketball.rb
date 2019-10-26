@@ -178,12 +178,7 @@ def player_stats(player_name)
   game_hash().each do |home_away, team|
     team[:players].each do |player|
       if player[:player_name] == player_name
-        i = 1
-        while i < player.length - 1 do 
-          stat = player[i]
-          result[stat] = player[stat]
-          i += 1
-        end 
+         
       end
     end
   end 
